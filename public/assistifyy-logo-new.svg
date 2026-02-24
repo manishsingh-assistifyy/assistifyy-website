@@ -1,0 +1,58 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Eye Icon -->
+  <g transform="translate(0, 5)">
+    <!-- Outer eye shape -->
+    <path d="M25 15C25 15 20 8 12.5 8C5 8 0 15 0 15C0 15 5 22 12.5 22C20 22 25 15 25 15Z" fill="url(#gradient1)" opacity="0.3"/>
+    
+    <!-- Eye curve top -->
+    <path d="M25 15C25 15 20 8 12.5 8C5 8 0 15 0 15" stroke="url(#gradient2)" stroke-width="2" stroke-linecap="round" fill="none"/>
+    
+    <!-- Iris -->
+    <circle cx="12.5" cy="15" r="5.5" fill="url(#gradient3)"/>
+    
+    <!-- Pupil -->
+    <circle cx="12.5" cy="15" r="3" fill="#1e293b"/>
+    
+    <!-- Highlight -->
+    <circle cx="14" cy="13.5" r="1.5" fill="white" opacity="0.8"/>
+    
+    <!-- Eyelid accent -->
+    <path d="M6 12C8 10 11 9 12.5 9C14 9 17 10 19 12" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  </g>
+  
+  <!-- "iQ" Text -->
+  <g transform="translate(32, 0)">
+    <!-- i -->
+    <circle cx="3" cy="10" r="2.5" fill="#3B82F6"/>
+    <rect x="1" y="16" width="4" height="16" rx="2" fill="#3B82F6"/>
+    
+    <!-- Q -->
+    <path d="M18 24C18 18.5 22 14 27.5 14C33 14 37 18.5 37 24C37 29.5 33 34 27.5 34C25 34 23 33 21 31" stroke="url(#gradient4)" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M30 30L35 35" stroke="url(#gradient5)" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="gradient1" x1="0" y1="8" x2="25" y2="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0" y1="8" x2="25" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="gradient3" x1="7" y1="10" x2="18" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="gradient4" x1="18" y1="14" x2="37" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="gradient5" x1="30" y1="30" x2="35" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+</svg>

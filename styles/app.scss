@@ -1,0 +1,122 @@
+@use "tailwindcss";
+
+/* ── Theme Variables ── */
+:root {
+  --color-primary: #3B82F6;
+  --color-secondary: #8B5CF6;
+  --color-dark: #0f172a;
+  --color-danger: #d7263d;
+  --header-logo-height: 44px;
+  --header-font-size: 1.6rem;
+  --nav-font-size: 1.1rem;
+}
+
+/* ── Responsive Header ── */
+@media (max-width: 900px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0.7rem 0.2rem 0.7rem;
+  }
+  .main-header-left { gap: 0.7rem; }
+  .main-header-title { font-size: 1.2rem; margin-right: 0.7rem; }
+  .main-header-logo { height: 36px; }
+  .main-header-nav { gap: 0.7rem; }
+  .main-header-link { font-size: 1rem; padding: 0.3rem 0.7rem; }
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.3rem 0.3rem 0.1rem 0.3rem;
+  }
+  .main-header-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+  .main-header-title { font-size: 1rem; margin-right: 0.3rem; }
+  .main-header-logo { height: 28px; }
+  .main-header-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    margin-top: 0.2rem;
+  }
+  .main-header-link {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* ── Main Header ── */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 0.35rem;
+  padding: 0.5rem 1.5rem 0.2rem 1rem;
+  background: var(--color-dark);
+  border-bottom: 1.5px solid var(--color-primary);
+  box-shadow: 0 2px 12px rgba(59, 130, 246, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.main-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.main-header-logo {
+  height: var(--header-logo-height);
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.main-header-title {
+  color: #fff;
+  font-weight: 800;
+  font-size: var(--header-font-size);
+  letter-spacing: 2px;
+  margin-right: 1.2rem;
+}
+
+.main-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.main-header-link {
+  color: #fff;
+  font-size: var(--nav-font-size);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.4rem 1.1rem;
+  border-radius: 6px;
+  transition: background 0.18s, color 0.18s;
+
+  &:hover,
+  &.active {
+    background: var(--color-primary);
+    color: #fff;
+  }
+}
+
+/* ── Utilities ── */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+html:has(.main-content) {
+  background-color: #000;
+}

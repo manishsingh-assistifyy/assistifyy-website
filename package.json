@@ -10,17 +10,17 @@
   },
   "dependencies": {
     "motion": "^12.5.0",
-    "next": "15.2.3",
+    "next": "^14.2.0",
     "nodemailer": "^7.0.12",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
     "sass": "^1.86.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4.0.14",
-    "eslint": "^9",
-    "eslint-config-next": "15.2.3",
+    "eslint": "^8",
+    "eslint-config-next": "^14.2.0",
     "postcss": "^8",
     "tailwindcss": "^4.0.14"
   }
